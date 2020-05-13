@@ -64,7 +64,6 @@
                         <th>Resource 3</th>
                         <th>Coordinates</th>
                         <th>Glyphs</th>
-                        <th>Author</th>
                         <th>Comments</th>
 <!--                        delete is only shown when v-show is triggered in PlanetTable-->
                         <th v-show="adminTable">Delete</th>

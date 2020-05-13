@@ -2,13 +2,12 @@
 <!--    create template element; provide object locations-->
     <tr v-bind:key="planet.resource1">
         <td>{{ planet.name }}</td>
-        <td>{{ planet.system }}</td>
+        <td>{{ planet.weather }}</td>
         <td>{{ planet.resource1 }}</td>
         <td>{{ planet.resource2 }}</td>
         <td>{{ planet.resource3 }}</td>
-        <td>{{ planet.coordinates }}</td>
+        <td>{{ planet.galacticCoords }}</td>
         <td>{{ planet.glyphs }}</td>
-        <td>{{ planet.author }}</td>
         <td>{{ planet.comments }}</td>
 <!--        admin menu to only show delete option when clicked-->
         <td v-show="admin">

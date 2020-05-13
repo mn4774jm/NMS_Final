@@ -16,13 +16,13 @@
 <!--                user inputs to form and labels-->
 <!--                v-model.trim used to bind form elements to the data-->
                 <div class="form-group">
-                    <label for="name">Planet Name *</label>
+                    <label for="name">Planet Name*</label>
                     <input id="name" class="form-control" v-model.trim="newPlanetName">
                 </div>
 
                 <div class="form-group">
-                    <label for="system">System Name *</label>
-                    <input id="system" class="form-control" v-model.trim="newSystemName">
+                    <label for="weather">System Name*</label>
+                    <input id="weather" class="form-control" v-model.trim="newSystemName">
                 </div>
                 <div class="form-group">
                     <label>Planetary Resources</label>
@@ -155,10 +155,6 @@
 <!--                        <img src="@/assets/glyph.jpg" alt="glyph map" width="300">-->
                 </div>
 
-                <div class="form-group">
-                    <label for="author">Author</label>
-                    <input id="author" class="form-control" v-model.trim="newAuthor">
-                </div>
 
                 <div class="form-group">
                     <label for="comments">Comments</label>
@@ -185,7 +181,6 @@
                 newResource3: '',
                 newCoordinates: "",
                 newGlyphs: '',
-                newAuthor: '',
                 newComment: '',
                 errors: [],
                 success: []
@@ -201,9 +196,9 @@
                 && this.newResource3) {
 
                     // creating new planet object to be emitted
-                    let planet = { name: this.newPlanetName, system: this.newSystemName, resource1: this.newResource1,
-                    resource2: this.newResource2, resource3: this.newResource3, coordinates: this.newCoordinates,
-                    glyphs: this.newGlyphs, author: this.newAuthor, comments: this.newComment }
+                    let planet = { name: this.newPlanetName, weather: this.newSystemName, resource1: this.newResource1,
+                    resource2: this.newResource2, resource3: this.newResource3, galacticCoords: this.newCoordinates,
+                    glyphs: this.newGlyphs, comments: this.newComment }
 
                     // save success message to success list to display in template
                     this.success.push('New planet Submitted Successfully')
